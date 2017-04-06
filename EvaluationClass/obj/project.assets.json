@@ -3708,10 +3708,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gerasymiuk\\Documents\\Visual Studio 2017\\Projects\\EvaluationOfEffectivenessModul\\EvaluationClass\\EvaluationClass.csproj",
+      "projectUniqueName": "C:\\Users\\gerasymiuk\\Downloads\\PortableGit\\Projects\\EvaluationOfEffectivenessModul\\EvaluationEffectivityModul\\EvaluationClass\\EvaluationClass.csproj",
       "projectName": "EvaluationClass",
-      "projectPath": "C:\\Users\\gerasymiuk\\Documents\\Visual Studio 2017\\Projects\\EvaluationOfEffectivenessModul\\EvaluationClass\\EvaluationClass.csproj",
-      "outputPath": "C:\\Users\\gerasymiuk\\Documents\\Visual Studio 2017\\Projects\\EvaluationOfEffectivenessModul\\EvaluationClass\\obj\\",
+      "projectPath": "C:\\Users\\gerasymiuk\\Downloads\\PortableGit\\Projects\\EvaluationOfEffectivenessModul\\EvaluationEffectivityModul\\EvaluationClass\\EvaluationClass.csproj",
+      "outputPath": "C:\\Users\\gerasymiuk\\Downloads\\PortableGit\\Projects\\EvaluationOfEffectivenessModul\\EvaluationEffectivityModul\\EvaluationClass\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netstandard1.4"
