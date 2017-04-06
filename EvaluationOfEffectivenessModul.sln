@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvaluationOfEffectivenessModul", "EvaluationOfEffectivenessModul\EvaluationOfEffectivenessModul.csproj", "{AE2AE1A7-D052-46EB-A4ED-49A014E7E229}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvaluationClass", "EvaluationClass\EvaluationClass.csproj", "{BC68DAB0-0D7F-4933-A041-BCD6F54F88AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE2AE1A7-D052-46EB-A4ED-49A014E7E229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE2AE1A7-D052-46EB-A4ED-49A014E7E229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE2AE1A7-D052-46EB-A4ED-49A014E7E229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE2AE1A7-D052-46EB-A4ED-49A014E7E229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC68DAB0-0D7F-4933-A041-BCD6F54F88AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC68DAB0-0D7F-4933-A041-BCD6F54F88AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC68DAB0-0D7F-4933-A041-BCD6F54F88AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC68DAB0-0D7F-4933-A041-BCD6F54F88AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
