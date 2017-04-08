@@ -6,7 +6,7 @@ namespace EvaluationClass
     {
         public Main()
         {
-            Console.WriteLine("Hello world");
+            
         }
     }
 }
