@@ -52,6 +52,7 @@ namespace EvaluationOfEffectivenessModul.Services
             }
             return res;
         }
+        //private double getDegreeOfRisk()
         
 
     }

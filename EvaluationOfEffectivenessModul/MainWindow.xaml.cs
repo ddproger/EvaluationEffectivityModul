@@ -22,9 +22,7 @@ namespace EvaluationOfEffectivenessModul
     {
         public MainWindow()
         {
-            InitializeComponent();
-            EvaluationClass.Main main = new EvaluationClass.Main();
-
+            
         }
     }
 }
