@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:EvaluationOfEffectivenessModul"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+    <Grid Margin="0,0,-1200,-463" RenderTransformOrigin="0.389,0.391">
+        <DataGrid HorizontalAlignment="Left" Height="201" Margin="10,10,0,0" VerticalAlignment="Top" Width="337"/>
+
     </Grid>
 </Window>
