@@ -34,20 +34,20 @@ namespace EvaluationOfEffectivenessModul.Services
         {
             return getSumSingleRiskList(p, u)+getRisk(E,M);
         }
-        private double getRang(long sum, double p, long cost)//6
+        public static double getRang(long sum, double p, long cost)//6
         {
             return (sum * p) / cost;
         }
-        private double getCost(double D, long I, long W)//7
+        public static double getCost(double D, long I, long W)//7
         {
             return D + I * W;
         }
-        private double getCoefficientRentabilnosti(IList<long> CF, long k)//8
+        public static double getCoefficientRentabilnosti(ICollection<Investment> invest)//8
         {
             double res = 0;
             int i = 1;
-            foreach(long item in CF){
-                res+=item/Math.Pow((1+k),i);
+            foreach(Investment item in invest){
+                res+=item.cashFlov/Math.Pow((1+item.salesRevenue),i);
                 i++;
             }
             return res;

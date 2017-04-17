@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EvaluationOfEffectivenessModul.Services
+{
+    public class Investment
+    {
+        public long cashFlov { get; set; }
+        public long salesRevenue { get; set; }
+        public string time { get; set; }
+        public Investment(long c, long s, string time)
+        {
+            this.cashFlov = c;
+            this.salesRevenue = s;
+            this.time = time;
+        }
+    }
+}
