@@ -8,6 +8,7 @@ namespace EvaluationOfEffectivenessModul.Services
 {
     public class Investment
     {
+        public static string[] title = {"Денежный поток","Доход от реализации","Период времени"};
         public long cashFlov { get; set; }
         public long salesRevenue { get; set; }
         public string time { get; set; }

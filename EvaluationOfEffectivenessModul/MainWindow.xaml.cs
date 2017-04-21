@@ -22,7 +22,11 @@ namespace EvaluationOfEffectivenessModul
     
     public partial class MainWindow : Window
     {
-        
+        List<Investment> investmentList = new List<Investment>()
+            {
+                new Investment(1,2,"3")
+            };
+
         private double getDouble(String text)
         {
             double res = 0;
@@ -75,11 +79,31 @@ namespace EvaluationOfEffectivenessModul
 
         private void updateDgInvest(object sender, RoutedEventArgs e)
         {
-            List<Investment> res = new List<Investment>()
-            {
-                new Investment(1,2,"3")
-            };
-            dgInvestment.ItemsSource = res;
+            DataGridColumn col1 = new DataGridTextColumn();
+            DataGridColumn col2 = new DataGridTextColumn();
+            DataGridColumn col3 = new DataGridTextColumn();
+            
+            col1.Width = 150;
+            col1.Header = Investment.title[0];
+            col2.Width = 150;
+            col2.Header = Investment.title[1];
+            col3.Width = 80;
+            col3.Header = Investment.title[2];
+
+            dgInvestment.Columns.Add(col1);
+            dgInvestment.Columns.Add(col2);
+            dgInvestment.Columns.Add(col3);
+            
+            //dgInvestment.ItemsSource = investmentList;
+            
+
+
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            dgInvestment.Items.Add(new Investment(1, 3, "k"));
         }
     }
 }

@@ -8,6 +8,7 @@ namespace EvaluationOfEffectivenessModul.Services
 {
     class EvaluationClass
     {
+       
         private double getImportanceInformationAsset(long E, double Y)//1
         {
             return E/Y;
