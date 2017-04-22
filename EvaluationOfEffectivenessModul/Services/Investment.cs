@@ -12,6 +12,10 @@ namespace EvaluationOfEffectivenessModul.Services
         public long cashFlov { get; set; }
         public long salesRevenue { get; set; }
         public string time { get; set; }
+        public Investment()
+        {
+            
+        }
         public Investment(long c, long s, string time)
         {
             this.cashFlov = c;

@@ -19,7 +19,7 @@
         </Grid.ColumnDefinitions>
         <Frame x:Name="frame" Content="Модуль оценки рисков" Grid.Column="1" HorizontalAlignment="Left" Height="650" Grid.Row="1" VerticalAlignment="Top" Width="492" Grid.RowSpan="2" BorderBrush="Black" Foreground="Black" OpacityMask="Black" Background="#FFBFC8FF"/>
         <Button x:Name="buttonCreateSystemOfCoeffModul" Content="Вызов модуля создания системы весовых коэффициентов" Grid.Column="1" HorizontalAlignment="Left" Margin="10,621,0,0" Grid.Row="2" VerticalAlignment="Top" Width="404" Height="47"/>
-        <DataGrid x:Name="dataGrid" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="2" VerticalAlignment="Top" Height="416" Width="469" AutoGenerateColumns="False" CanUserAddRows="True" ItemsSource="{Binding Path=Rows}">
+        <DataGrid x:Name="dataGrid" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="2" VerticalAlignment="Top" Height="416" Width="469" AutoGenerateColumns="False" CanUserAddRows="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Название ИР"/>
                 <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Стоимость ИР"/>
@@ -28,7 +28,13 @@
             </DataGrid.Columns>
         </DataGrid>
         <Frame x:Name="frame_Copy" Content="Модуль формирования инвестиций&#xD;&#xA;" Grid.Column="1" HorizontalAlignment="Left" Height="650" Grid.Row="1" VerticalAlignment="Top" Width="414" Grid.RowSpan="2" BorderBrush="Black" Foreground="Black" OpacityMask="Black" Margin="497,2,0,0" Background="#FFBFC8FF"/>
-        <DataGrid x:Name="dgInvestment" Grid.Column="1" CanUserAddRows="True" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Height="223" Width="392" Margin="509,2,0,0" Loaded="updateDgInvest"/>
+        <DataGrid x:Name="dgInvestment" Grid.Column="1" CanUserAddRows="True" AutoGenerateColumns="False" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Height="223" Width="392" Margin="512,1,0,0" ItemsSource="{Binding Path=InvestmentRows}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=cashFlov}" Width="150" ClipboardContentBinding="{x:Null}" Header="Денежный поток"/>
+                <DataGridTextColumn Binding="{Binding Path=salesRevenue}" Width="150" ClipboardContentBinding="{x:Null}" Header="Доход от реализации"/>
+                <DataGridTextColumn Binding="{Binding Path=time}" Width="100" ClipboardContentBinding="{x:Null}" Header="Период времени"/>
+            </DataGrid.Columns>
+        </DataGrid>
         <Grid Grid.Column="1" Margin="509,278,-6,299" Grid.Row="2">
             <Frame x:Name="frame1" Content="Входные данные" HorizontalAlignment="Left" Height="181" VerticalAlignment="Top" Width="392" Background="#FFBFFCFF"/>
             <TextBox x:Name="txtExpectedProfit" HorizontalAlignment="Left" Height="23" Margin="202,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
@@ -65,7 +71,6 @@
         <Label x:Name="label_Copy12" Content="Субьективный риск" HorizontalAlignment="Left" Margin="325,524,0,0" VerticalAlignment="Top" Width="123" Grid.Row="2" Grid.Column="1"/>
         <TextBox x:Name="txtAgregateRisk" HorizontalAlignment="Left" Height="23" Margin="404,560,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" Grid.Column="1" Grid.Row="2"/>
         <Label x:Name="label_Copy13" Content="Соокупный риск" HorizontalAlignment="Left" Margin="300,560,0,0" VerticalAlignment="Top" Width="104" Grid.Row="2" Grid.Column="1"/>
-        <Button Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="784,204,0,0" Grid.Row="2" VerticalAlignment="Top" Width="116" Click="Button_Click"/>
 
     </Grid>
 </Window>
