@@ -1,28 +1,23 @@
 ﻿using EvaluationOfEffectivenessModul.Services;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace EvaluationOfEffectivenessModul
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     
     public partial class MainWindow : Window
     {
-        List<Investment> investmentList = new List<Investment>()
+      private readonly ObservableCollection<dynamic> rows = new ObservableCollection<dynamic>()
+      {
+        new object()
+      };
+
+
+    List<Investment> investmentList = new List<Investment>()
             {
                 new Investment(1,2,"3")
             };
@@ -58,7 +53,12 @@ namespace EvaluationOfEffectivenessModul
             
         }
 
-        private void buttonFormInvestFlow_Click(object sender, RoutedEventArgs e)
+      public ObservableCollection<dynamic> Rows
+    {
+        get { return rows; }
+      }
+
+      private void buttonFormInvestFlow_Click(object sender, RoutedEventArgs e)
         {
             txtCoeffInvest.Text = EvaluationClass.getCoefficientRentabilnosti(MainFormServices.getInvestmentList(dgInvestment)).ToString();
             txtProcessRang.Text = EvaluationClass.getRang(getInt(txtExpectedProfit.Text),
