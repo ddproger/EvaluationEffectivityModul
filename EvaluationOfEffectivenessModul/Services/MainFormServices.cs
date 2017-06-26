@@ -9,13 +9,12 @@ namespace EvaluationOfEffectivenessModul.Services
 {
     class MainFormServices
     {
-        public static ICollection<Investment> getInvestmentList(DataGrid dg)
+       public static long getCostMultiSuccess(ICollection<Investment> list)
         {
-            ICollection<Investment> res = new LinkedList<Investment>();
-            int n = dg.Items.Count;
-            for (int i = 0; i < n; i++)
+            long res = 0;
+            foreach (Investment item in list)
             {
-                res.Add(new Investment(i,0,dg.Items[i].ToString()));
+                res += item.cashFlov * item.salesRevenue;
             }
             return res;
         }

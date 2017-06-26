@@ -39,9 +39,9 @@ namespace EvaluationOfEffectivenessModul.Services
         {
             return (sum * p) / cost;
         }
-        public static double getCost(double D, long I, long W)//7
+        public static double getCost(double D, long IW)//7
         {
-            return D + I * W;
+            return D + IW;
         }
         public static double getCoefficientRentabilnosti(ICollection<Investment> invest)//8
         {

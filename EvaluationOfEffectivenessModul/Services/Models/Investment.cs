@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EvaluationOfEffectivenessModul.Services
+namespace EvaluationOfEffectivenessModul.Services.Models
 {
     public class Investment
     {

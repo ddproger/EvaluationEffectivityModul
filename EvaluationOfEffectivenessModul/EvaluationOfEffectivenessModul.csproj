@@ -55,8 +55,21 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Services\EvaluationClass.cs" />
-    <Compile Include="Services\Investment.cs" />
+    <Compile Include="Services\Models\Damage.cs" />
+    <Compile Include="Services\Models\InformationAssets.cs" />
+    <Compile Include="Services\Models\InformationRisk.cs" />
+    <Compile Include="Services\Models\Interfaces\IDamage.cs" />
+    <Compile Include="Services\Models\Interfaces\InformationAssetsInterface.cs" />
+    <Compile Include="Services\Models\Interfaces\InformationRiskInterface.cs" />
+    <Compile Include="Services\Models\Interfaces\IntruderInterface.cs" />
+    <Compile Include="Services\Models\Interfaces\InvestmentInterface.cs" />
+    <Compile Include="Services\Models\Interfaces\INetworkEntity.cs" />
+    <Compile Include="Services\Models\Interfaces\INetworkObject.cs" />
+    <Compile Include="Services\Models\Intruder.cs" />
+    <Compile Include="Services\Models\Investment.cs" />
     <Compile Include="Services\MainFormServices.cs" />
+    <Compile Include="Services\Models\NetworkEntity.cs" />
+    <Compile Include="Services\Models\NetworkObject.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -96,8 +109,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
